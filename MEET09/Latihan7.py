@@ -1,6 +1,8 @@
-bilangan = int(input("Masukkan bilangan: "))
+while True:
+    bilangan = int(input("Masukkan bilangan: "))
 
-while bilangan % 2 == 0 or bilangan < 20 or (bilangan < 35 and bilangan > 25) or bilangan > 40:
-    bilangan = int(input("Masukkan bilangan dalam rentang 10-15, 20-25, atau 35-40: "))
-
-print("Benar")
+    if (10 <= bilangan <= 15) or (20 <= bilangan <= 25) or (35 <= bilangan <= 40):
+        print("Benar")
+        break
+    else:
+        print("False, try again !")

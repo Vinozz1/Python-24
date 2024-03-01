@@ -19,4 +19,3 @@ for i in range(2, variabel):
 
 print(Listvariabel)
 
-# test

@@ -2,7 +2,7 @@ import random
 import string
 import os
 
-hari = ["Senin", "Selasa", "Rabu", "Kamis", "Ju'mat", "Sabtu"]
+hari = ["Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"]
 
 mata_pelajaran = {}
 lanjut = True
@@ -22,18 +22,17 @@ while lanjut:
     if continue_input.lower() != 'y':
         lanjut = False
 
-print("Lanjut (y/t)?", continue_input)
-
 os.system("cls" if os.name == "nt" else "clear")
 
 print("*"*10,"DAFTAR MAPEL", "*"*11)
-print("Mapel:", mapel)
-print("Guru:", guru)
-print("Hari:", hari_kelas)
-print("Jam:", jam_kelas)
-print("Ruangan:", ruangan)
+for id_mapel, info in mata_pelajaran.items():
+    print("Mapel:", info['Mapel'])
+    print("Guru:", info['Guru'])
+    print("Hari:", info['Hari'])
+    print("Jam:", info['Jam'])
+    print("Ruangan:", info['Ruangan'])
+    print("*"*35)
 
-print("*"*35)
 print("\nID\t\tMAPEL\t\t\tGURU\t\tHARI\t\tJAM\t\tRUANGAN")
 print("*"*35)
 for id_mapel, info in mata_pelajaran.items():

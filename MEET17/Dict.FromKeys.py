@@ -38,4 +38,4 @@ print( f"NewData Final = { NewData} ")
 import os
 os.system( "cls" ) #win
 #os.system( "clear" ) # mac
-print( f" { "Name":<7 } { "kelas":<10 } { "eMail":<10 } ")
+print( f' name\t kelas\t eMail')

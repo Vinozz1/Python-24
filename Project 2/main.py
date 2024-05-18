@@ -14,6 +14,9 @@ def open_pythagoras():
 
 root = tk.Tk()
 root.title("Main Menu")
+root.geometry("400x600")
+root.resizable(False, False)
+root.config(bg="gray")
 
 energi_button = tk.Button(root, text="Energi", command=open_energi)
 energi_button.pack(pady=10)
